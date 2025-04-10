@@ -26,11 +26,17 @@ namespace Week5Lesson27
         private void SetColumnHeader()
         {
             dgvEmployeeDatabase.Columns[nameof(Employee.FirstName)].HeaderText = "Imię";
+            dgvEmployeeDatabase.Columns[nameof(Employee.FirstName)].ReadOnly = true;
             dgvEmployeeDatabase.Columns[nameof(Employee.LastName)].HeaderText = "Nazwisko";
+            dgvEmployeeDatabase.Columns[nameof(Employee.LastName)].ReadOnly = true;
             dgvEmployeeDatabase.Columns[nameof(Employee.Comments)].HeaderText = "Uwagi";
+            dgvEmployeeDatabase.Columns[nameof(Employee.Comments)].ReadOnly = true;
             dgvEmployeeDatabase.Columns[nameof(Employee.Salary)].HeaderText = "Pensja";
+            dgvEmployeeDatabase.Columns[nameof(Employee.Salary)].ReadOnly = true;
             dgvEmployeeDatabase.Columns[nameof(Employee.HireDate)].HeaderText = "Data zatrudnienia";
+            dgvEmployeeDatabase.Columns[nameof(Employee.HireDate)].ReadOnly = true;
             dgvEmployeeDatabase.Columns[nameof(Employee.TerminationDate)].HeaderText = "Data zwolnienia";
+            dgvEmployeeDatabase.Columns[nameof(Employee.TerminationDate)].ReadOnly = true;
         }
 
         private void HideColumns()
