@@ -19,6 +19,23 @@ namespace Week5Lesson27
         {
             InitializeComponent();
             RefreshDatabase();
+            SetColumnHeader();
+            HideColumns();
+        }
+
+        private void SetColumnHeader()
+        {
+            dgvEmployeeDatabase.Columns[nameof(Employee.FirstName)].HeaderText = "Imię";
+            dgvEmployeeDatabase.Columns[nameof(Employee.LastName)].HeaderText = "Nazwisko";
+            dgvEmployeeDatabase.Columns[nameof(Employee.Comments)].HeaderText = "Uwagi";
+            dgvEmployeeDatabase.Columns[nameof(Employee.Salary)].HeaderText = "Pensja";
+            dgvEmployeeDatabase.Columns[nameof(Employee.HireDate)].HeaderText = "Data zatrudnienia";
+            dgvEmployeeDatabase.Columns[nameof(Employee.TerminationDate)].HeaderText = "Data zwolnienia";
+        }
+
+        private void HideColumns()
+        {
+            dgvEmployeeDatabase.Columns[nameof(Employee.Id)].Visible = false;       
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
