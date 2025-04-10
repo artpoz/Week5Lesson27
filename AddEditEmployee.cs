@@ -52,8 +52,7 @@ namespace Week5Lesson27
             tbId.Text = _employee.Id.ToString();
             tbFirstName.Text = _employee.FirstName;
             tbLastName.Text = _employee.LastName;
-            dtpHireDate.Value = _employee.HireDate;
-            dtpTerminationDate.Value = _employee.TerminationDate;
+            dtpHireDate.Value = _employee.HireDate;            
             tbComments.Text = _employee.Comments;
             tbSalary.Text = _employee.Salary.ToString();
         }
@@ -88,7 +87,7 @@ namespace Week5Lesson27
                 FirstName = tbFirstName.Text,
                 LastName = tbLastName.Text,
                 HireDate = dtpHireDate.Value,
-                TerminationDate = dtpTerminationDate.Value,
+                //TerminationDate = dtpTerminationDate.Value,
                 Salary = double.Parse(tbSalary.Text),
                 Comments = tbComments.Text,
             };

@@ -64,12 +64,40 @@ namespace Week5Lesson27
             RefreshDatabase();
         }
 
-
-
         public void RefreshDatabase()
         {
             var employees = _fileHelper.DeserializeFromFile();
             dgvEmployeeDatabase.DataSource = employees;
+        }
+
+        private void btnFire_Click(object sender, EventArgs e)
+        {
+            if (dgvEmployeeDatabase.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Proszę zaznacz pracownika, którego chcesz zwolnić");
+                return;
+            }
+            
+            int employeeId = Convert.ToInt32(dgvEmployeeDatabase.SelectedRows[0].Cells["Id"].Value);
+
+            var employees = _fileHelper.DeserializeFromFile();
+            var employee = employees.FirstOrDefault(x => x.Id == employeeId);
+
+            var fireEmployee = new FireEmployee();
+            var result = fireEmployee.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+
+                employee.TerminationDate = fireEmployee.TerminationDate;
+
+                _fileHelper.SerializeToFile(employees);
+
+                RefreshDatabase();
+
+                MessageBox.Show($"Pracownik {employee.FirstName} {employee.LastName} został zwolniony.", "Zwolniony", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
     }
 }

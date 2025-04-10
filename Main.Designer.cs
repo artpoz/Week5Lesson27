@@ -31,6 +31,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.dgvEmployeeDatabase = new System.Windows.Forms.DataGridView();
+            this.btnFire = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeDatabase)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,11 +71,22 @@
             this.dgvEmployeeDatabase.Size = new System.Drawing.Size(984, 321);
             this.dgvEmployeeDatabase.TabIndex = 2;
             // 
+            // btnFire
+            // 
+            this.btnFire.Location = new System.Drawing.Point(308, 30);
+            this.btnFire.Name = "btnFire";
+            this.btnFire.Size = new System.Drawing.Size(107, 42);
+            this.btnFire.TabIndex = 3;
+            this.btnFire.Text = "Zwolnij";
+            this.btnFire.UseVisualStyleBackColor = true;
+            this.btnFire.Click += new System.EventHandler(this.btnFire_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 458);
+            this.Controls.Add(this.btnFire);
             this.Controls.Add(this.dgvEmployeeDatabase);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -90,6 +102,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.DataGridView dgvEmployeeDatabase;
+        private System.Windows.Forms.Button btnFire;
     }
 }
 

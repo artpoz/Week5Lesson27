@@ -37,13 +37,11 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tbSalary = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbComments = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpHireDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpTerminationDate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +95,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(48, 399);
+            this.btnConfirm.Location = new System.Drawing.Point(46, 327);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(130, 23);
             this.btnConfirm.TabIndex = 6;
@@ -107,7 +105,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(219, 399);
+            this.btnCancel.Location = new System.Drawing.Point(217, 327);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(130, 23);
             this.btnCancel.TabIndex = 7;
@@ -124,18 +122,9 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Data zatrudnienia";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 228);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 16);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Data zwolnienia";
-            // 
             // tbSalary
             // 
-            this.tbSalary.Location = new System.Drawing.Point(190, 277);
+            this.tbSalary.Location = new System.Drawing.Point(190, 228);
             this.tbSalary.Name = "tbSalary";
             this.tbSalary.Size = new System.Drawing.Size(193, 22);
             this.tbSalary.TabIndex = 12;
@@ -143,7 +132,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(116, 283);
+            this.label6.Location = new System.Drawing.Point(116, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 16);
             this.label6.TabIndex = 13;
@@ -151,7 +140,7 @@
             // 
             // tbComments
             // 
-            this.tbComments.Location = new System.Drawing.Point(190, 322);
+            this.tbComments.Location = new System.Drawing.Point(190, 273);
             this.tbComments.Name = "tbComments";
             this.tbComments.Size = new System.Drawing.Size(193, 22);
             this.tbComments.TabIndex = 14;
@@ -159,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(116, 325);
+            this.label7.Location = new System.Drawing.Point(116, 276);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 15;
@@ -172,25 +161,16 @@
             this.dtpHireDate.Size = new System.Drawing.Size(200, 22);
             this.dtpHireDate.TabIndex = 16;
             // 
-            // dtpTerminationDate
-            // 
-            this.dtpTerminationDate.Location = new System.Drawing.Point(190, 228);
-            this.dtpTerminationDate.Name = "dtpTerminationDate";
-            this.dtpTerminationDate.Size = new System.Drawing.Size(200, 22);
-            this.dtpTerminationDate.TabIndex = 17;
-            // 
             // AddEditEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 450);
-            this.Controls.Add(this.dtpTerminationDate);
+            this.ClientSize = new System.Drawing.Size(410, 375);
             this.Controls.Add(this.dtpHireDate);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbComments);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbSalary);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
@@ -218,12 +198,10 @@
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbSalary;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbComments;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpHireDate;
-        private System.Windows.Forms.DateTimePicker dtpTerminationDate;
     }
 }
