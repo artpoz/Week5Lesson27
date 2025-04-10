@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -8,6 +9,8 @@ namespace Week5Lesson27
 {
     internal static class Program
     {
+        public static string FilePath = Path.Combine(Environment.CurrentDirectory, "employees.txt");
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,7 @@ namespace Week5Lesson27
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Main());
         }
     }
 }
