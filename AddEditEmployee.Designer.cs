@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(151, 25);
+            this.label1.Location = new System.Drawing.Point(151, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 16);
             this.label1.TabIndex = 0;
@@ -74,7 +74,7 @@
             // tbId
             // 
             this.tbId.Enabled = false;
-            this.tbId.Location = new System.Drawing.Point(190, 19);
+            this.tbId.Location = new System.Drawing.Point(190, 25);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(193, 22);
             this.tbId.TabIndex = 3;
@@ -95,9 +95,9 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(46, 327);
+            this.btnConfirm.Location = new System.Drawing.Point(39, 327);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(130, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(130, 36);
             this.btnConfirm.TabIndex = 6;
             this.btnConfirm.Text = "Zatwierdź";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -105,9 +105,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(217, 327);
+            this.btnCancel.Location = new System.Drawing.Point(253, 327);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(130, 23);
+            this.btnCancel.Size = new System.Drawing.Size(130, 36);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Anuluj";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 174);
+            this.label4.Location = new System.Drawing.Point(58, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 16);
             this.label4.TabIndex = 8;
@@ -132,7 +132,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(116, 234);
+            this.label6.Location = new System.Drawing.Point(116, 231);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 16);
             this.label6.TabIndex = 13;
@@ -148,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(116, 276);
+            this.label7.Location = new System.Drawing.Point(124, 276);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 15;
@@ -158,7 +158,7 @@
             // 
             this.dtpHireDate.Location = new System.Drawing.Point(190, 174);
             this.dtpHireDate.Name = "dtpHireDate";
-            this.dtpHireDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpHireDate.Size = new System.Drawing.Size(193, 22);
             this.dtpHireDate.TabIndex = 16;
             // 
             // AddEditEmployee
