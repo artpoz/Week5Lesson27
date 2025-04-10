@@ -23,11 +23,6 @@ namespace Week5Lesson27
             
         }
 
-        public void FillTextBox()
-        {
-            //dtpTerminationDate.Value = _employee.TerminationDate;
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
@@ -39,15 +34,6 @@ namespace Week5Lesson27
 
             TerminationDate = dtpTerminationDate.Value;
             DialogResult = DialogResult.OK;
-
-            /*
-            if (_employeeId != 0)
-                employees.RemoveAll(x => x.Id == _employeeId);
-            else
-                AssignIdToNewEmployee(employees);
-
-            AddNewEmployeeToList(employees);
-            */
 
             _fileHelper.SerializeToFile(employees);
 

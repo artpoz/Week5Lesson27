@@ -60,6 +60,8 @@
     <Compile Include="FireEmployee.Designer.cs">
       <DependentUpon>FireEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupsHelper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -15,9 +15,18 @@ namespace Week5Lesson27
         private FileHelper<List<Employee>> _fileHelper =
             new FileHelper<List<Employee>>(Program.FilePath);
 
+        private List<Group> _groups;
+
         public Main()
         {
             InitializeComponent();
+
+            _groups = GroupsHelper.GetGroups();
+
+            cbFilter.DataSource = _groups;
+            cbFilter.DisplayMember = "Name";
+            cbFilter.ValueMember = "Id";
+
             RefreshDatabase();
             SetColumnHeader();
             HideColumns();
@@ -73,6 +82,16 @@ namespace Week5Lesson27
         public void RefreshDatabase()
         {
             var employees = _fileHelper.DeserializeFromFile();
+            var selectedGroupId = (cbFilter.SelectedItem as Group).Id;          
+
+            if (selectedGroupId != 0)
+            {
+                if (selectedGroupId == 1)
+                    employees = employees.Where(x => x.TerminationDate.ToString() == "01.01.0001 00:00:00").ToList();
+
+                if (selectedGroupId == 2)
+                    employees = employees.Where(x => x.TerminationDate.ToString() != "01.01.0001 00:00:00").ToList();
+            }
             dgvEmployeeDatabase.DataSource = employees;
         }
 
@@ -104,6 +123,11 @@ namespace Week5Lesson27
                 MessageBox.Show($"Pracownik {employee.FirstName} {employee.LastName} został zwolniony.", "Zwolniony", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+        }
+
+        private void cbFilter_SelectedValueChanged(object sender, EventArgs e)
+        {
+            RefreshDatabase();
         }
     }
 }

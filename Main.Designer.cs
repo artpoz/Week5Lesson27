@@ -32,6 +32,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.dgvEmployeeDatabase = new System.Windows.Forms.DataGridView();
             this.btnFire = new System.Windows.Forms.Button();
+            this.cbFilter = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeDatabase)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,11 +82,22 @@
             this.btnFire.UseVisualStyleBackColor = true;
             this.btnFire.Click += new System.EventHandler(this.btnFire_Click);
             // 
+            // cbFilter
+            // 
+            this.cbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFilter.FormattingEnabled = true;
+            this.cbFilter.Location = new System.Drawing.Point(475, 40);
+            this.cbFilter.Name = "cbFilter";
+            this.cbFilter.Size = new System.Drawing.Size(232, 24);
+            this.cbFilter.TabIndex = 4;
+            this.cbFilter.SelectedValueChanged += new System.EventHandler(this.cbFilter_SelectedValueChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 458);
+            this.Controls.Add(this.cbFilter);
             this.Controls.Add(this.btnFire);
             this.Controls.Add(this.dgvEmployeeDatabase);
             this.Controls.Add(this.btnEdit);
@@ -103,6 +115,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.DataGridView dgvEmployeeDatabase;
         private System.Windows.Forms.Button btnFire;
+        private System.Windows.Forms.ComboBox cbFilter;
     }
 }
 
