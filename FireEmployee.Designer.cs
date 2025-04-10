@@ -79,6 +79,10 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.dtpTerminationDate);
             this.Controls.Add(this.label5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(582, 210);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(582, 210);
             this.Name = "FireEmployee";
             this.Text = "Zwolnij";
             this.ResumeLayout(false);

@@ -69,7 +69,7 @@
             this.dgvEmployeeDatabase.RowHeadersWidth = 51;
             this.dgvEmployeeDatabase.RowTemplate.Height = 24;
             this.dgvEmployeeDatabase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmployeeDatabase.Size = new System.Drawing.Size(984, 321);
+            this.dgvEmployeeDatabase.Size = new System.Drawing.Size(769, 220);
             this.dgvEmployeeDatabase.TabIndex = 2;
             // 
             // btnFire
@@ -96,12 +96,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1058, 458);
+            this.ClientSize = new System.Drawing.Size(843, 357);
             this.Controls.Add(this.cbFilter);
             this.Controls.Add(this.btnFire);
             this.Controls.Add(this.dgvEmployeeDatabase);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
+            this.MinimumSize = new System.Drawing.Size(861, 404);
             this.Name = "Main";
             this.Text = "Baza pracowników";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeDatabase)).EndInit();

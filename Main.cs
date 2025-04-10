@@ -108,7 +108,7 @@ namespace Week5Lesson27
             var employees = _fileHelper.DeserializeFromFile();
             var employee = employees.FirstOrDefault(x => x.Id == employeeId);
 
-            var fireEmployee = new FireEmployee();
+            var fireEmployee = new FireEmployee(employeeId);
             var result = fireEmployee.ShowDialog();
 
             if (result == DialogResult.OK)

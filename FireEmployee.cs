@@ -20,7 +20,13 @@ namespace Week5Lesson27
         public FireEmployee(int id = 0)
         {
             InitializeComponent();
-            
+                      
+            var employees = _fileHelper.DeserializeFromFile();
+            var employee = employees.FirstOrDefault(x => x.Id == id);
+
+            if (employee.TerminationDate.ToString() != "01.01.0001 00:00:00")
+                dtpTerminationDate.Value = employee.TerminationDate;
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

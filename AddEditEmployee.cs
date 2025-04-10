@@ -86,8 +86,7 @@ namespace Week5Lesson27
                 Id = _employeeId,
                 FirstName = tbFirstName.Text,
                 LastName = tbLastName.Text,
-                HireDate = dtpHireDate.Value,
-                //TerminationDate = dtpTerminationDate.Value,
+                HireDate = dtpHireDate.Value,           
                 Salary = double.Parse(tbSalary.Text),
                 Comments = tbComments.Text,
             };
@@ -97,11 +96,11 @@ namespace Week5Lesson27
 
         private void AssignIdToNewEmployee(List<Employee> students)
         {
-            var studentWithHighestId = students
+            var employeeWithHighestId = students
            .OrderByDescending(x => x.Id).FirstOrDefault();
 
-            _employeeId = studentWithHighestId == null ?
-                1 : studentWithHighestId.Id + 1;
+            _employeeId = employeeWithHighestId == null ?
+                1 : employeeWithHighestId.Id + 1;
         }
     }
 }
