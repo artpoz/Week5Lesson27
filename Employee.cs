@@ -11,8 +11,8 @@ namespace Week5Lesson27
         public int Id { get; set; }
         public string FirstName {  get; set; }
         public string LastName { get; set; }
-        public DateTime? HireDate { get; set; }
-        public DateTime? TerminationDate {  get; set; }
+        public DateTime HireDate { get; set; }
+        public DateTime TerminationDate {  get; set; }
         
         public double Salary { get; set; }
         public string Comments { get; set; }

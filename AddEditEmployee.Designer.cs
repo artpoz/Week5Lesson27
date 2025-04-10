@@ -37,13 +37,13 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbHireDate = new System.Windows.Forms.TextBox();
-            this.tbTerminationDate = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbSalary = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbComments = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dtpHireDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpTerminationDate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -124,20 +124,6 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Data zatrudnienia";
             // 
-            // tbHireDate
-            // 
-            this.tbHireDate.Location = new System.Drawing.Point(190, 171);
-            this.tbHireDate.Name = "tbHireDate";
-            this.tbHireDate.Size = new System.Drawing.Size(193, 22);
-            this.tbHireDate.TabIndex = 9;
-            // 
-            // tbTerminationDate
-            // 
-            this.tbTerminationDate.Location = new System.Drawing.Point(190, 222);
-            this.tbTerminationDate.Name = "tbTerminationDate";
-            this.tbTerminationDate.Size = new System.Drawing.Size(193, 22);
-            this.tbTerminationDate.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -179,18 +165,32 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Uwagi";
             // 
+            // dtpHireDate
+            // 
+            this.dtpHireDate.Location = new System.Drawing.Point(190, 174);
+            this.dtpHireDate.Name = "dtpHireDate";
+            this.dtpHireDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpHireDate.TabIndex = 16;
+            // 
+            // dtpTerminationDate
+            // 
+            this.dtpTerminationDate.Location = new System.Drawing.Point(190, 228);
+            this.dtpTerminationDate.Name = "dtpTerminationDate";
+            this.dtpTerminationDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpTerminationDate.TabIndex = 17;
+            // 
             // AddEditEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 450);
+            this.Controls.Add(this.dtpTerminationDate);
+            this.Controls.Add(this.dtpHireDate);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbComments);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbSalary);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbTerminationDate);
-            this.Controls.Add(this.tbHireDate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
@@ -218,12 +218,12 @@
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbHireDate;
-        private System.Windows.Forms.TextBox tbTerminationDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbSalary;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbComments;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dtpHireDate;
+        private System.Windows.Forms.DateTimePicker dtpTerminationDate;
     }
 }
